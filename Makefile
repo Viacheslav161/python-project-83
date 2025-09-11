@@ -1,15 +1,24 @@
-install:
-	uv sync
-
-dev:
-	uv run flask --debug --app page_analyzer:app run
-
-	PORT ?= 8000
-start:
-	uv run gunicorn -w 5 -b 0.0.0.0:$(PORT) page_analyzer:app
+PORT ?= 8000
 
 build:
-	./build.sh
+		./build.sh
+
+install:
+		uv sync
 
 render-start:
-	gunicorn -w 5 -b 0.0.0.0:$(PORT) page_analyzer:app
+		gunicorn -w 5 -b 0.0.0.0:$(PORT) page_analyzer:app
+
+
+start:
+		uv run gunicorn -w 5 -b 0.0.0.0:$(PORT) page_analyzer:app
+
+
+lint:
+		uv run ruff check
+
+lint-fix:
+		uv run ruff check --fix
+
+dev:
+		uv run flask --debug --app page_analyzer:app run
