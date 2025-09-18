@@ -7,9 +7,14 @@ def get_data(response):
 
     result['h1'] = parsed_content.h1.string if parsed_content.h1 else ""
     result['title'] = parsed_content.title.string if parsed_content.title else ""
-    meta_description = parsed_content.find('meta', {'name': 'description'})
+    meta_description = parsed_content.find(
+        'meta', {'name': 'description'}
+    )
+
     result['description'] = (
-        meta_description.get('content') if meta_description else ""
+        meta_description.get('content')
+        if meta_description
+        else ""
     )
 
     return result
