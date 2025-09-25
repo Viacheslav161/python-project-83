@@ -1,5 +1,5 @@
 ### Hexlet tests and linter status:
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Viacheslav161_python-project-50&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Viacheslav161_python-project-50)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Viacheslav161_python-project-83&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Viacheslav161_python-project-83)
 [![Actions Status](https://github.com/Viacheslav161/python-project-83/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Viacheslav161/python-project-83/actions)
 # Page Analyzer
 ****
